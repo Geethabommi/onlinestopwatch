@@ -1,0 +1,175 @@
+body {
+  margin-bottom: 10px;
+}
+header {
+  background-color: #212735;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  color: #00cfc7;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+header h1 {
+  font-size: 5rem;
+  font-family: Helvetica Neue;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+header span {
+  color: #ffffff;
+  font-size: 1em;
+}
+
+/*background effect*/
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(
+    -60deg,
+    #8500f4 50%,
+    rgba(22, 92, 139, 0.568) 50%
+  );
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+/*timer card styles start here*/
+.card {
+  margin: auto;
+  text-align: center;
+  width: 575px;
+  height: 250px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.card span {
+  font-size: 8rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+/*timer button styles*/
+.btnmenucard {
+  margin: auto;
+  text-align: center;
+  width: 575px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 40px;
+}
+.menubuttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btns {
+  margin: 0.3125rem;
+  width: 6.25rem;
+  height: 6.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  border-radius: 50%;
+}
+
+.startbtn {
+  background-color: #17a69d;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.startbtn:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+.stopbtn {
+  background-color: #e11584;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.stopbtn:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+.resetbtn {
+  background-color: #007bff;
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0);
+}
+.resetbtn:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
+.btns:disabled,
+btns[disabled] {
+  background-color: rgba(219, 208, 208, 0);
+  color: #aaa;
+  border-color: #aaa;
+  cursor: not-allowed;
+}
+.settings {
+  background: none;
+  border: none;
+}
+.settings img {
+  width: 50px;
+}
+.settings span {
+  width: 106px;
+  margin-left: 5px;
+}
+.alertinput {
+  width: 4.75rem;
+  margin-right: 0.25rem;
+}
+
+.alertfieldduration {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  font-size: 14px;
+  height: 2em;
+  line-height: 2em;
+  padding: 0 0.5em;
+  vertical-align: middle;
+}
+.alertinputlabel {
+  display: inline-block;
+  font-weight: bold;
+}
+#alertdurations p {
+  margin: 0;
+}
+#errormsg {
+  color: red;
+}
+#alertaudio {
+  height: 0;
+}
