@@ -3,7 +3,7 @@
 A basic Stopwatch which has all the basic functionalities.
 The Project is developed using Vanilla Js,CSS and Bootstrap.
 
-Link to Stopwatch Project Hosted Page:
+Link to Stopwatch Project Hosted Page: [https://geethabommi.github.io/onlinestopwatch/](url)
 
 # Features and Functions
 
@@ -17,6 +17,9 @@ The display timer remains set to '00:00:00:000' initially i.e. (HH:MM:SS) and ch
 # Start Button
 
     when start button is clicked,stopwatch timer starts the timer from the current display time in stopwatch.
+    
+    ![start](https://user-images.githubusercontent.com/30235824/166095694-29c642dd-fcec-478e-89f9-766381a353a2.PNG)
+
 
 # Stop Button
 
