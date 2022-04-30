@@ -82,7 +82,7 @@ function alertCheckboxFunc() {
     document.getElementById("alerthour").value = "";
     document.getElementById("alertmin").value = "";
     document.getElementById("alertsec").value = "";
-    console.log(typeof document.getElementById("alertsec").value);
+    // console.log(typeof document.getElementById("alertsec").value);
   }
   showDurationSetting();
 }
@@ -130,6 +130,13 @@ function validateInput() {
   }
   document.getElementById("errormsg").innerHTML = text;
 }
+//function to reset the alert sound value when it's not saved upon closing the modal
+function closeModal() {
+  document.getElementById("alerthour").value = timerSoundHr;
+  document.getElementById("alertmin").value = timerSoundMin;
+  document.getElementById("alertsec").value = timerSoundSec;
+}
+
 //function plays the sound at given alert time.
 function playSound() {
   if (showAlertSetting == true) {
